@@ -1,0 +1,6 @@
+<Files application.php>
+deny from all
+</Files>
+<Files feedreader.sql>
+deny from all
+</Files>

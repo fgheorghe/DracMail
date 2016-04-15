@@ -1,0 +1,50 @@
+<?php
+error_reporting(0);
+ini_set( "pcre.recursion_limit", 1000 );
+set_time_limit(600);
+
+/**
+ * Main configuration.
+*/
+define('IMAP_SERVER_HOST', "HOSTNAME"); // IMAP server host
+define('IMAP_SERVER_PORT', "143"); // IMAP server port, default to 143
+define('IMAP_SERVER_VALIDATE_CERTIFICATE', false); // Validate IMAP server certificate, default to false
+define('CLASSES_PATH', "./classes/"); // Path to classes folder, default to ./classes/
+define('MYSQL_HOST', 'localhost'); // MySQL server host, default to localhost
+define('MYSQL_USER', 'USER'); // MySQL server username
+define('MYSQL_PASS', 'PASSWORD'); // MySQL server password
+define('MYSQL_DB', 'dracmail'); // MySQL database name, default to dracmail
+define('FOLDER_TYPE_INBOX', 1); // Folder type INBOX
+define('FOLDER_TYPE_DRAFTS', 2); // Folder type DRATFS
+define('FOLDER_TYPE_SENT', 3); // Folder type SENT
+define('FOLDER_TYPE_TRASH', 4); // Folder type TRASH
+define('FOLDER_TYPE_USER_DEFINED', 5); // Folder type USER_DEFINED
+
+$folderMapping = array(
+	"INBOX" => array( // IMAP folder name
+		"type" => FOLDER_TYPE_INBOX  // Folder type
+		,"text" => "Inbox" // Friendly text
+		,"create" => false // Create if not found (false for the INBOX folder)
+	)
+	,"INBOX.Sent" => array(
+		"type" => FOLDER_TYPE_SENT // Folder type SENT (save all sent messages here)
+		,"text" => "Sent" // Friendly text
+		,"create" => true  // Create if not found, default to true
+	)
+	,"INBOX.Drafts" => array(
+		"type" => FOLDER_TYPE_DRAFTS
+		,"text" => "Drafts"
+		,"create" => true
+	)
+	,"INBOX.Trash" => array(
+		"type" => FOLDER_TYPE_TRASH
+		,"text" => "Trash"
+		,"create" => true
+	)
+	,"INBOX.Junk" => array(
+		"type" => FOLDER_TYPE_USER_DEFINED
+		,"text" => "Junk"
+		,"create" => false
+	)
+);
+?>

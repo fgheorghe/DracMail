@@ -1,0 +1,6 @@
+.unread-row TD {
+	font-weight: bold !important;
+}
+.contentIframe {
+	border: 0;
+}

@@ -1,0 +1,33 @@
+.mailMenu {
+    background-image: url(./ico/applications-office.png) !important;
+}
+.logout {
+    background-image: url(./ico/system-log-out.png) !important;
+}
+.synchronizeMail {
+    background-image: url(./ico/mail-send-receive.png) !important;
+}
+.composeMail {
+    background-image: url(./ico/mail-message-new.png) !important;
+}
+.sendMail {
+    background-image: url(./ico/mail-message-new.png) !important;
+}
+.cancelMail {
+    background-image: url(./ico/mail-mark-junk.png) !important;
+}
+.deleteMail {
+    background-image: url(./ico/mail-mark-junk.png) !important;
+}
+.replySender {
+    background-image: url(./ico/mail-reply-sender.png) !important;
+}
+.replyAll {
+    background-image: url(./ico/mail-reply-all.png) !important;
+}
+.forwardMail {
+    background-image: url(./ico/mail-forward.png) !important;
+}
+.saveDraft {
+    background-image: url(./ico/document-save.png) !important;
+}

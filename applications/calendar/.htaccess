@@ -1,0 +1,6 @@
+<Files application.php>
+deny from all
+</Files>
+<Files calendar.sql>
+deny from all
+</Files>
