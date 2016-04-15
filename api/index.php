@@ -1,7 +1,5 @@
 <?php
 
-test fail
-
 /**
  * dracMail API
 */
